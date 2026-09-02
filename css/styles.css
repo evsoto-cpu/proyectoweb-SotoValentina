@@ -1,17 +1,25 @@
 /* Reset y Fuentes */
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-header {
+.header {
     background: #eccfe8;
     color: #fff;
     padding: 1rem;
     position: fixed;
     width: 100%;
     z-index: 1000;
+}
+
+.header-inner {
+   display: flex;
+   align-items: center;
+   width: 100%;
+
+    
 }
 /* Estilos para el contenedor del logo y el título */
   .logo {
@@ -31,22 +39,23 @@ header {
   }
   
   /* BOTONES DE INICIO Y BARRA DE NAVEGACIÓN */
-  .nav ul {
+  .main-nav ul {
+    margin-left: auto;
   display: flex;
   list-style: none; /* Quita los puntos (viñetas) de la lista. */
-  gap: 15px; /*Espacio entre las secciones del menú nav */
+  /*gap: 15px; /*Espacio entre las secciones del menú nav */
   }
 
-  .nav ul li a{
+  .main-nav ul li a{
     color:beige;
     text-decoration: none;
-    margin-left: 2rem;
+    margin-left: 5rem;
     display: flex;
     list-style: none; /*Quita los puntos (viñetas) de la lista */
     gap: 15px; /*espacio entre las secciones del menú nav*/
 }
   
-    .nav-button {
+    .btn-shop {
     background-color: #9AAF94;
     color: #530a73;
   padding: 10px 20px;
@@ -62,3 +71,39 @@ header {
     background-color: #7F966F;
   transform: scale(1.05);
   }
+
+    .footer {
+    width: 100%;
+    display: block;
+}
+
+.footer-social {
+    width: 100%;
+    background-color: #E8A0BF;
+    padding: 25px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #9AAF94;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
